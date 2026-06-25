@@ -1,39 +1,105 @@
 {
   "version": "2.0",
-  "dataset_id": "on004865",
-  "source": "openneuro",
-  "source_id": "ds004865",
+  "pipeline_stage": "enriched",
   "title": "pyFR: Delayed Free Recall of Word Lists, Preliminary Cognitive Electrophysiology Study",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Haydn G. Herrema": {},
     "Michael J. Kahana": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004865.v2.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004865",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004865",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004789",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004809",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "beh",
-    "ieeg"
-  ],
-  "datatypes": [
-    "beh",
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "NIH: MH055687"
+      "funder_name": "NIH",
+      "award_number": "MH055687"
     },
     {
-      "funder_name": "NIH: MH061975"
+      "funder_name": "NIH",
+      "award_number": "MH061975"
     }
   ],
-  "acknowledgements": "We thank our collaborators who have helped in the collection of this data: Hospital of the University of Pennsylvania, Thomas Jefferson University Hospital."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "beh",
+    "ieeg"
+  ],
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt"
+  ],
+  "description": "This dataset comprises intracranial electrophysiological recordings and behavioral data from a delayed free recall task involving word list learning. Participants studied visually presented word lists, performed arithmetic distractor tasks, and then freely recalled words in any order. The data were collected across multiple clinical sites as part of a collaborative cognitive electrophysiology study and represent a preliminary investigation that serves as a predecessor to larger-scale free recall studies (ds004789: FR1 and ds004809: CatFR1).",
+  "methods_description": "Intracranial EEG recordings were obtained during a delayed free recall paradigm in which participants studied word lists presented visually one at a time, completed arithmetic problems as a distractor task, and then freely recalled studied words. Recordings were made on multiple systems and scaled to provide voltage values in volts. Both monopolar (referenced, typically to mastoid) and bipolar recordings are included, with electrode locations documented in MNI and Talairach coordinates when available.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "free recall"
+    },
+    {
+      "term": "Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
+    },
+    {
+      "term": "word lists"
+    },
+    {
+      "term": "cognitive electrophysiology"
+    },
+    {
+      "term": "neural recording"
+    },
+    {
+      "term": "delayed free recall"
+    },
+    {
+      "term": "clinical iEEG"
+    },
+    {
+      "term": "Behavior",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001519"
+    },
+    {
+      "term": "Electrophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
+    }
+  ],
+  "source_hash": "fc4628ea16e225532427a0e7058cd5b007bb72a1cbced089301d3d30a2c7f9b9"
 }
