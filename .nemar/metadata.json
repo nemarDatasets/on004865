@@ -2,18 +2,41 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "pyFR: Delayed Free Recall of Word Lists, Preliminary Cognitive Electrophysiology Study",
+  "description": "This dataset comprises behavioral events and intracranial electrophysiological recordings from a delayed free recall task conducted across multiple clinical sites. Participants studied visually presented word lists, performed arithmetic distractor tasks, and freely recalled words in any order. The recordings were collected as part of a preliminary cognitive electrophysiology study by the Computational Memory Lab at the University of Pennsylvania, serving as a predecessor to subsequent free recall and categorical free recall studies.",
+  "methods_description": "Participants performed a delayed free recall task involving visual presentation of word lists, arithmetic distractor problems, and free recall. Intracranial EEG recordings were acquired using multiple recording systems and electrode montages. Monopolar recordings were referenced (typically mastoid) and bipolar recordings were referenced according to paired channel schemes. MNI and Talairach coordinates were obtained for electrode locations when available.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Haydn G. Herrema": {},
     "Michael J. Kahana": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004865.v2.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "free recall"
+    },
+    {
+      "term": "memory encoding"
+    },
+    {
+      "term": "cognitive electrophysiology"
+    },
+    {
+      "term": "word lists"
+    },
+    {
+      "term": "electrode localization"
+    },
+    {
+      "term": "delayed free recall"
+    },
+    {
+      "term": "arithmetic distractor"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004865",
       "identifier_type": "URL",
@@ -33,6 +56,11 @@
       "identifier": "10.18112/openneuro.ds004809",
       "identifier_type": "DOI",
       "relation_type": "IsSupplementedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004865.v2.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -46,60 +74,21 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "ieeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "105.0 GB (174 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
     ".tsv",
-    ".txt"
+    ".txt",
+    ".yml"
   ],
-  "description": "This dataset comprises intracranial electrophysiological recordings and behavioral data from a delayed free recall task involving word list learning. Participants studied visually presented word lists, performed arithmetic distractor tasks, and then freely recalled words in any order. The data were collected across multiple clinical sites as part of a collaborative cognitive electrophysiology study and represent a preliminary investigation that serves as a predecessor to larger-scale free recall studies (ds004789: FR1 and ds004809: CatFR1).",
-  "methods_description": "Intracranial EEG recordings were obtained during a delayed free recall paradigm in which participants studied word lists presented visually one at a time, completed arithmetic problems as a distractor task, and then freely recalled studied words. Recordings were made on multiple systems and scaled to provide voltage values in volts. Both monopolar (referenced, typically to mastoid) and bipolar recordings are included, with electrode locations documented in MNI and Talairach coordinates when available.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "free recall"
-    },
-    {
-      "term": "Memory",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
-    },
-    {
-      "term": "word lists"
-    },
-    {
-      "term": "cognitive electrophysiology"
-    },
-    {
-      "term": "neural recording"
-    },
-    {
-      "term": "delayed free recall"
-    },
-    {
-      "term": "clinical iEEG"
-    },
-    {
-      "term": "Behavior",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001519"
-    },
-    {
-      "term": "Electrophysiology",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
-    }
-  ],
-  "source_hash": "fc4628ea16e225532427a0e7058cd5b007bb72a1cbced089301d3d30a2c7f9b9"
+  "source_hash": "cd3e1fcf7c13fdae3dfe56ff5b1a48cabf170a8eb53712ecbdaf33929feeea52"
 }
